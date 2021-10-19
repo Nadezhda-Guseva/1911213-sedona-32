@@ -1,0 +1,23 @@
+.index-header {
+  color: #FFFFFF;
+  background-color: #000000;
+  background-image: url("/images/index-bg.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.sign-up {
+  color: #FFFFFF;
+  background-color: #000000;
+  background-image: url("/images/sign-up-bg.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.inner-header {
+  color: #FFFFFF;
+  background-color: #000000;
+  background-image: url("/images/catalog-bg.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
