@@ -1,17 +1,152 @@
-.index-header {
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/pt-sans-regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/pt-sans-bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 68px;
+  font-weight: 700;
   color: #FFFFFF;
-  background-color: #000000;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.button {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #756257;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button-small {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button-blue {
+  background-color: #83B3D3;
+}
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+}
+
+.index-header {
   background-image: url("/images/index-bg.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
+.advantages-description {
+  line-height: 21px;
+}
+
+ol .advantages-item:nth-child(1) {
+  background-color: #83B3D3;
+  color: #FFFFFF;
+}
+
+ol .advantages-item:nth-child(2) {
+  background-color: #83B3D3;
+  color: #FFFFFF;
+}
+
+ol .advantages-item:nth-child(3) {
+  background-color: #F0F5F9;
+  color: #000000;
+}
+
+ol .advantages-item:nth-child(4) {
+  background-color: #E6F0F6;
+  color: #000000;
+}
+
+ol .advantages-item:nth-child(5) {
+  background-color: #F0F5F9;
+  color: #000000;
+}
+
+ul .advantages-item-2lvl:nth-child(1) {
+  background-color: #F0F5F9;
+  color: #000000;
+}
+
+ul .advantages-item-2lvl:nth-child(2) {
+  background-color: #E6F0F6;
+  color: #000000;
+}
+
+ul .advantages-item-2lvl:nth-child(3) {
+  background-color: #F0F5F9;
+  color: #000000;
+}
+
+.main-index {
+  text-align: center;
+}
+
+.call-to-action {
+  font-size: 22px;
+  line-height: 26px;
+}
+
 .sign-up {
+  font-size: 22px;
+  line-height: 26px;
   color: #FFFFFF;
   background-color: #000000;
   background-image: url("/images/sign-up-bg.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.footer-phone-number {
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-decoration: none;
 }
 
 .inner-header {
@@ -21,3 +156,85 @@
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
+
+.breadcrumbs {
+  color: #FFFFFF;
+}
+
+.breadcrumbs-link {
+  color: inherit;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.catalog-filter-discard {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.mode-selection {
+  border: #E5E5E5;
+}
+
+.hotel-card-link {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-decoration: none;
+}
+
+.hotel-card-button {
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #756257;
+}
+
+.button-favorites {
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #83B3D3;
+}
+
+.button-favorites-selected {
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #7DB54F;
+}
+
+.hotel-card-type {
+  color: #333333;
+}
+
+.hotel-card-price {
+  color: #333333;
+}
+
+.hotel-card-rating {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #333333;
+  background-color: #F2F2F2;
+  text-transform: uppercase;
+}
+
+.pagination-link {
+  background-color: #83B3D3;
+}
+
+.pagination-current {
+  background-color: #E5E5E5;
+}
+
