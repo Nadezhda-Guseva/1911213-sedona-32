@@ -14,7 +14,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -51,6 +59,8 @@ h3 {
   background-color: #756257;
   text-decoration: none;
   text-transform: uppercase;
+  padding: 16px;
+  border-radius: 10px;
 }
 
 .button-small {
@@ -60,6 +70,23 @@ h3 {
 
 .button-blue {
   background-color: #83B3D3;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  width: 416px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  max-width: 250px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -72,61 +99,148 @@ h3 {
   text-decoration: none;
 }
 
+.main-index {
+  text-align: center;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-logo {
+  display: block;
+  margin: 0 auto;
+}
+
 .index-header {
   background-image: url("/images/index-bg.jpg");
-  background-size: 100% auto;
+  width: 1200px;
+  height: 485px;
   background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.advantages-container {
+  width: 720px;
+  margin: 0 auto;
+  padding-top: 52px;
+  padding-bottom: 78px;
 }
 
 .advantages-description {
   line-height: 21px;
 }
 
-ol .advantages-item:nth-child(1) {
+.advantages-header {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  padding-bottom: 24px;
+}
+
+.advantages-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.advantages-item {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  width: 400px;
+  height: 384px;
+}
+
+.advantages-item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 250px;
+  height: 400px;
+}
+
+.advantages-item-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  width: 400px;
+  height: 384px;
+}
+
+.advantages-item-item .icon {
+  align-self: center;
+}
+
+.advantages-image {
+  width: 800px;
+  height: 384px;
+}
+
+.advantages-item-2lvl {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.advantages-item:nth-child(1) {
   background-color: #83B3D3;
   color: #FFFFFF;
 }
 
-ol .advantages-item:nth-child(2) {
+.advantages-item:nth-child(5) {
   background-color: #83B3D3;
   color: #FFFFFF;
 }
 
-ol .advantages-item:nth-child(3) {
+.advantages-item:nth-child(6) {
   background-color: #F0F5F9;
   color: #000000;
 }
 
-ol .advantages-item:nth-child(4) {
+.advantages-item:nth-child(7) {
   background-color: #E6F0F6;
   color: #000000;
 }
 
-ol .advantages-item:nth-child(5) {
+.advantages-item:nth-child(8) {
   background-color: #F0F5F9;
   color: #000000;
 }
 
-ul .advantages-item-2lvl:nth-child(1) {
-  background-color: #F0F5F9;
-  color: #000000;
-}
-
-ul .advantages-item-2lvl:nth-child(2) {
+.advantages-item-item:nth-child(1) {
   background-color: #E6F0F6;
   color: #000000;
 }
 
-ul .advantages-item-2lvl:nth-child(3) {
+.advantages-item-item:nth-child(2) {
   background-color: #F0F5F9;
   color: #000000;
 }
 
-.main-index {
-  text-align: center;
+.advantages-item-item:nth-child(3) {
+  background-color: #E6F0F6;
+  color: #000000;
 }
+
 
 .call-to-action {
+  width: 720px;
+  margin: 0 auto;
+  padding-top: 90px;
+  padding-bottom: 90px;
   font-size: 22px;
   line-height: 26px;
 }
@@ -139,6 +253,25 @@ ul .advantages-item-2lvl:nth-child(3) {
   background-image: url("/images/sign-up-bg.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.sign-up-container {
+  width: 720px;
+  margin: 0 auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.page-footer {
+  display: flex;
+  margin: 0 auto;
+}
+
+
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
 }
 
 .footer-phone-number {
@@ -237,4 +370,3 @@ ul .advantages-item-2lvl:nth-child(3) {
 .pagination-current {
   background-color: #E5E5E5;
 }
-
