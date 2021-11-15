@@ -58,14 +58,17 @@
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="index.html">
                   <span class="visually-hidden">Главная</span>
-                  <img class="breadcrumbs-icon" src="/images/icon-home.svg" width="12" height="12">
+                  <svg class="breadcrumbs-icon" aria-hidden="true" focusable="false" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 3 4 8.80006v6.20004h12V8.80006L10 3Zm5 11.0001H5V9.20005L10 4.4l5 4.80005v4.80005Z"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 13.0001h1v-2.5h2v2.5h1V9.50005H8v3.50005Z"/>
+                  </svg>
                 </a>
               </li>
               <li class="breadcrumbs-item">
                 <img src="images/nav-link.svg">
               </li>
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link">Гостиницы</a>
+                <a class="breadcrumbs-link text-link" href="catalog.html">Гостиницы</a>
               </li>
             </ul>
             <section class="catalog-filter-section">
@@ -139,7 +142,7 @@
                   </button>
                 </fieldset>
                 <div class="catalog-filter-buttons">
-                  <input class="button button--small button--blue" type="submit" value="Применить">
+                  <input class="button button-filter" type="submit" value="Применить">
                   <input class="catalog-filter-discard" type="reset" value="Сбросить">
                 </div>
               </form>

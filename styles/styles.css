@@ -18,6 +18,15 @@ html {
   height: 100%;
 }
 
+input, select, textarea {
+  border:none;
+  background-image:none;
+  background-color:transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
 body {
   margin: 0;
   min-height: 100%;
@@ -119,6 +128,31 @@ h3 {
 
 .button--blue:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("/images/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position-x: 96%;
+  background-position-y: 50%;
+  border: 2px solid #E5E5E5;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-radius: 4px;
+  width: 288px;
+  padding: 12px;
+  padding-left: 16px;
+}
+
+select:hover, select:focus {
+  border: 2px solid #83B3D3;
+}
+
+select:active {
+  opacity: 30%;
 }
 
 .page-header {
@@ -649,8 +683,10 @@ ol .advantages-item-5 .advantages-description::before {
 
 .breadcrumbs {
   display: flex;
+  align-items: center;
   color: #FFFFFF;
   list-style: none;
+  align-items: center;
   padding: 0;
   margin: 0;
   margin-left: 72px;
@@ -658,11 +694,33 @@ ol .advantages-item-5 .advantages-description::before {
 }
 
 .breadcrumbs-item {
+  display: flex;
+  align-items: center;
   margin-right: 10px;
+  height: 20px;
+  align-self: center;
 }
 
 .breadcrumbs-link {
+  margin: auto;
   color: inherit;
+  fill: #FFFFFF;
+  text-decoration: none;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.breadcrumbs-link:hover {
+  opacity: 60%;
+}
+
+.breadcrumbs-link:focus {
+  outline: 3px solid #83B3D3;
+  outline-offset: 4px;
+}
+
+.breadcrumbs-link:active{
+  opacity: 30%;
 }
 
 .catalog-filter {
@@ -687,8 +745,29 @@ ol .advantages-item-5 .advantages-description::before {
 .catalog-filter-buttons {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: flex-end;
   gap: 16px;
+}
+
+.button-filter {
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 4px;
+  padding: 10px 34px;
+  background-color: #83B3D3;
+}
+
+.button-filter:hover {
+  background-color: #68A2CA;
+}
+
+.button-filter:focus {
+  outline: 3px solid #FFFFFF;
+}
+
+.button-filter:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .catalog-filter-discard {
@@ -702,6 +781,21 @@ ol .advantages-item-5 .advantages-description::before {
   border: none;
   text-decoration: none;
   cursor: pointer;
+  width: 100px;
+  height: 32px;
+  border-radius: 4px;
+}
+
+.catalog-filter-discard:hover {
+  opacity: 60%;
+}
+
+.catalog-filter-discard:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.catalog-filter-discard:active {
+  opacity: 30%;
 }
 
 .sorting-container {
@@ -724,16 +818,6 @@ ol .advantages-item-5 .advantages-description::before {
   align-self: stretch;
 }
 
-.select-control {
-  border: 2px solid #E5E5E5;
-  background-color: #FFFFFF;
-  color: #000000;
-  border-radius: 4px;
-  width: 288px;
-  padding: 12px;
-  padding-left: 16px;
-}
-
 .mode-selection-container {
   display: flex;
   margin-left: 80px;
@@ -751,6 +835,10 @@ ol .advantages-item-5 .advantages-description::before {
   padding-right: 14px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+}
+
+.mode-selection:hover, .mode-selection:focus {
+  border: 2px solid #83B3D3;
 }
 
 .mode-active {
@@ -816,6 +904,35 @@ ol .advantages-item-5 .advantages-description::before {
   color: #000000;
   background-color: #FFFFFF;
   text-decoration: none;
+  padding: 0;
+  width: max-content;
+}
+
+.hotel-card-link:hover {
+  color: #756257;
+}
+
+.hotel-card-link:focus {
+  color: #756257;
+  outline: 3px solid #83B3D3;
+  outline-offset: 4px;
+  border-radius: 1px;
+}
+
+.hotel-card-link:active {
+  opacity: 30%;
+}
+
+.hotel-card-image:hover {
+  opacity: 60%;
+}
+
+.hotel-card-image:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.hotel-card-image:active {
+  opacity: 30%;
 }
 
 .hotel-card-button {
