@@ -128,18 +128,29 @@
                 </fieldset>
                 <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                  <label class="catalog-filter-label">
-                    от <input class="catalog-filter-input" type="number" name="min-price" value="0">
-                  </label>
-                  <label class="catalog-filter-label">
-                    до <input class="catalog-filter-input" type="number" name="max-price" value="9000">
-                  </label>
-                  <button class="range-toggle toggle-min" type="button">
-                    <span class="visually-hidden">Изменить минимальную стоимость</span>
-                  </button>
-                  <button class="range-toggle toggle-max" type="button">
-                    <span class="visually-hidden">Изменить максимальную стоимость</span>
-                  </button>
+
+                  <div class="range">
+                    <div class="range-scale">
+                      <div class="range-bar" style="left: 0; width: 220px">
+                        <button class="range-toggle toggle-min">
+                          <span class="visually-hidden">Изменить минимальную стоимость</span>
+                        </button>
+                        <button class="range-toggle toggle-max">
+                          <span class="visually-hidden">Изменить максимальную стоимость</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="range-wrapper-inputs">
+                      <label class="catalog-filter-label">
+                        <input class="range-input" type="number" value="0" name="min-price">от
+                      </label>
+                      <label class="catalog-filter-label">
+                        <input class="range-input" type="number" value="900" name="max-price" style="width: 37px">до
+                      </label>
+                    </div>
+                  </div>
+
                 </fieldset>
                 <div class="catalog-filter-buttons">
                   <input class="button button-filter" type="submit" value="Применить">
@@ -302,10 +313,11 @@
               <h2 class="sign-up-title">Подпишитесь на рассылку</h2>
               <p class="sign-up-text">Только полезная информация и никакого спама, <br>
                 честное бойскаутское!</p>
-              <form class="sign-up-form" action="#" method="post">
-                <input class="sign-up-input" type="e-mail" name="e-mail" value="Ваш e-mail">
-                <input class="button sign-up-button" type="submit" value="Подписаться">
-              </form>
+                <form class="sign-up-form" action="https://echo.htmlacademy.ru/" method="post">
+                  <label class="visually-hidden" for="e-mail">Ваш e-mail</label>
+                  <input class="field sign-up-input" type="e-mail" name="e-mail" id="e-mail" placeholder="Ваш e-mail" >
+                  <input class="button sign-up-button" type="submit" value="Подписаться">
+                </form>
             </div>
           </section>
         </div>
