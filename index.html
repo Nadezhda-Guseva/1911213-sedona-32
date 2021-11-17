@@ -43,6 +43,48 @@
                   Избранное
                 </span>
               </a>
+              <div class="popover popover-favorits">
+                <div class="popover-content">
+                  <h2 class="popover-title visually-hidden">Избранное</h2>
+                  <ul class="favorits-items-list">
+                    <li class="favorits-item">
+                      <a class="favorits-link" href="#">
+                        <img class="favorits-img" src="/images/hotel-2-small.png" width="48px" height="48px">
+                        <p class="favorits-item-title">Desert Quail Inn</p>
+                        <p class="favorits-item-type">Мотель</p>
+                      </a>
+                      <button type="button" class="delete-button">
+                        <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3 2.3H13.1H2.8H0.6C0.3 2.3 0 2.5 0 2.8C0 3.1 0.3 3.4 0.6 3.4H2.3V15.4C2.3 15.7 2.6 16 2.9 16H13.1C13.4 16 13.7 15.7 13.7 15.4V3.4H15.4C15.7 3.4 16 3.1 16 2.8C16 2.5 15.6 2.3 15.3 2.3ZM12.5 14.8H3.4V3.4H12.5V14.8Z"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M6.19995 1.2H9.59995C9.89995 1.2 10.2 0.9 10.2 0.6C10.2 0.3 9.99995 0 9.69995 0H6.19995C5.89995 0 5.69995 0.3 5.69995 0.6C5.69995 0.9 5.89995 1.2 6.19995 1.2Z" />
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M6.2001 12C6.5001 12 6.8001 11.7 6.8001 11.4V5.7C6.8001 5.4 6.5001 5.1 6.2001 5.1C5.9001 5.1 5.6001 5.4 5.6001 5.7V11.4C5.7001 11.7 5.9001 12 6.2001 12Z"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M9.7001 12C10.0001 12 10.3001 11.7 10.3001 11.4V5.7C10.3001 5.4 10.0001 5.1 9.7001 5.1C9.4001 5.1 9.1001 5.5 9.1001 5.7V11.4C9.1001 11.7 9.3001 12 9.7001 12Z"/>
+                        </svg>
+                        <span class="visually-hidden">Удалить</span>
+                      </button>
+                    </li>
+                    <li class="favorits-item">
+                      <a class="favorits-link" href="#">
+                        <img class="favorits-img" src="/images/hotel-3-small.png" width="48px" height="48px">
+                        <p class="favorits-item-title">Villas at Poco Diablo</p>
+                        <p class="favorits-item-type">Апартаменты</p>
+                      </a>
+                      <button type="button" class="delete-button">
+                        <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3 2.3H13.1H2.8H0.6C0.3 2.3 0 2.5 0 2.8C0 3.1 0.3 3.4 0.6 3.4H2.3V15.4C2.3 15.7 2.6 16 2.9 16H13.1C13.4 16 13.7 15.7 13.7 15.4V3.4H15.4C15.7 3.4 16 3.1 16 2.8C16 2.5 15.6 2.3 15.3 2.3ZM12.5 14.8H3.4V3.4H12.5V14.8Z"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M6.19995 1.2H9.59995C9.89995 1.2 10.2 0.9 10.2 0.6C10.2 0.3 9.99995 0 9.69995 0H6.19995C5.89995 0 5.69995 0.3 5.69995 0.6C5.69995 0.9 5.89995 1.2 6.19995 1.2Z" />
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M6.2001 12C6.5001 12 6.8001 11.7 6.8001 11.4V5.7C6.8001 5.4 6.5001 5.1 6.2001 5.1C5.9001 5.1 5.6001 5.4 5.6001 5.7V11.4C5.7001 11.7 5.9001 12 6.2001 12Z"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M9.7001 12C10.0001 12 10.3001 11.7 10.3001 11.4V5.7C10.3001 5.4 10.0001 5.1 9.7001 5.1C9.4001 5.1 9.1001 5.5 9.1001 5.7V11.4C9.1001 11.7 9.3001 12 9.7001 12Z"/>
+                        </svg>
+                        <span class="visually-hidden">Удалить</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <button class="button popover-button" href="#">
+                    Все избранные
+                  </button>
+                </div>
+              </div>
             </li>
             <li class="navigation-item">
               <a class="button button--small" href="#">Хочу сюда!</a>
@@ -188,6 +230,71 @@
           </section>
         </div>
       </footer>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal modal-hotel-search">
+        <section class="modal-content">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="hotel-search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group error">
+              <label class="modal-label" for="date-start">Дата заезда:</label>
+              <input class="hotel-search-field field" type="date" id="date-start" name="date-start" placeholder="27 апреля 2020">
+            </p>
+            <p class="field-group success">
+              <label class="modal-label" for="date-end">Дата выезда:</label>
+              <input class="hotel-search-field field" type="date" id="date-end" name="date-end" placeholder="1 сентября 2021">
+            </p>
+            <p class="field-group">
+              <label class="modal-label" for="adult-number">Взрослые:</label>
+              <span class="number-container">
+                <button type="button" class="button-minus">
+                  <svg class="modal-icon" aria-hidden="true" focusable="false" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 9V11H17V9H3Z"/>
+                  </svg>
+                </button>
+                <input class="number-field" type="text" inputmode="numeric" id="adult-number" name="adult-number" placeholder="2">
+                <button type="button" class="button-plus">
+                  <svg class="modal-icon" aria-hidden="true" focusable="false" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
+                  </svg>
+                </button>
+              </span>
+            </p>
+            <p class="field-group">
+              <label class="modal-label child-number" for="child-number">Дети:
+                <span class="tooltip">
+                  <svg class="icon-info" aria-hidden="true" focusable="false" width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 17H13V11H12V17Z"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13 8H12V9H13V8Z"/>
+                  </svg>
+                  <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+              </label>
+              <span class="number-container">
+                <button type="button" class="button-minus">
+                  <svg class="modal-icon" aria-hidden="true" focusable="false" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 9V11H17V9H3Z"/>
+                  </svg>
+                </button>
+                <input class="number-field" type="text" inputmode="numeric" id="child-number" name="child-number" placeholder="1">
+                <button type="button" class="button-plus">
+                  <svg class="modal-icon" aria-hidden="true" focusable="false" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
+                  </svg>
+                </button>
+              </span>
+            </p>
+            <button type="button" class="button button-modal-find">
+              Найти
+            </button>
+          </form>
+        </section>
+      </div>
+
     </div>
   </body>
 </html>

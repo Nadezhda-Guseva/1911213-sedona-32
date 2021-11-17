@@ -79,21 +79,21 @@
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="swimming-pool" checked>
+                        <input class="visually-hidden control-input" type="checkbox" name="swimming-pool" checked>
                         <span class="control-mark"></span>
                         <span class="control-label">Бассейн</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="parking" checked>
+                        <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
                         <span class="control-mark"></span>
                         <span class="control-label">Парковка</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="wi-fi">
+                        <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
                         <span class="control-mark"></span>
                         <span class="control-label">Wi-Fi</span>
                       </label>
@@ -105,21 +105,21 @@
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="accomodation-type" value="hotel" checked>
+                        <input class="visually-hidden control-input" type="radio" name="accomodation-type" value="hotel" checked>
                         <span class="control-mark"></span>
                         <span class="control-label">Гостиница</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="accomodation-type" value="motel">
+                        <input class="visually-hidden control-input" type="radio" name="accomodation-type" value="motel">
                         <span class="control-mark"></span>
                         <span class="control-label">Мотель</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="accomodation-type" value="appartments">
+                        <input class="visually-hidden control-input" type="radio" name="accomodation-type" value="appartments">
                         <span class="control-mark"></span>
                         <span class="control-label">Апартаменты</span>
                       </label>
@@ -131,7 +131,7 @@
 
                   <div class="range">
                     <div class="range-scale">
-                      <div class="range-bar" style="left: 0; width: 220px">
+                      <div class="range-bar" style="left: 8px; width: 220px">
                         <button class="range-toggle toggle-min">
                           <span class="visually-hidden">Изменить минимальную стоимость</span>
                         </button>
@@ -146,7 +146,7 @@
                         <input class="range-input" type="number" value="0" name="min-price">от
                       </label>
                       <label class="catalog-filter-label">
-                        <input class="range-input" type="number" value="900" name="max-price" style="width: 37px">до
+                        <input class="range-input" type="number" value="900" name="max-price">до
                       </label>
                     </div>
                   </div>
@@ -315,7 +315,7 @@
                 честное бойскаутское!</p>
                 <form class="sign-up-form" action="https://echo.htmlacademy.ru/" method="post">
                   <label class="visually-hidden" for="e-mail">Ваш e-mail</label>
-                  <input class="field sign-up-input" type="e-mail" name="e-mail" id="e-mail" placeholder="Ваш e-mail" >
+                  <input class="field sign-up-input" type="e-mail" name="e-mail" id="e-mail" placeholder="Ваш e-mail" required>
                   <input class="button sign-up-button" type="submit" value="Подписаться">
                 </form>
             </div>
