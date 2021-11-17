@@ -18,7 +18,7 @@ html {
   height: 100%;
 }
 
-input, select, textarea {
+.field, .select{
   border:none;
   background-image:none;
   background-color:transparent;
@@ -27,7 +27,7 @@ input, select, textarea {
   box-shadow: none;
 }
 
-input::-webkit-calendar-picker-indicator {
+.field::-webkit-calendar-picker-indicator {
   opacity:0;
 }
 
@@ -61,20 +61,20 @@ body {
   overflow: hidden;
 }
 
-h1 {
+.h1 {
   font-size: 60px;
   line-height: 68px;
   font-weight: 700;
   color: #FFFFFF;
 }
 
-h2 {
+.h2 {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
-h3 {
+.h3 {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
@@ -138,7 +138,7 @@ h3 {
   color: rgba(255, 255, 255, 0.3);
 }
 
-select {
+.select {
   font: inherit;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -156,17 +156,17 @@ select {
 }
 
 
-select:hover, select:focus{
+.select:hover, select:focus{
   outline: none;
   border: 2px solid #83B3D3;
 }
 
-select:active {
+.select:active {
   opacity: 30%;
 }
 
-select:disabled,
-select:disabled:hover {
+.select:disabled,
+.select:disabled:hover {
   color: rgba(0, 0, 0, 0.3);
   background-image: none;
 }
@@ -368,31 +368,31 @@ select:disabled:hover {
   line-height: 21px;
 }
 
-ol .advantages-item-1 .advantages-description::before {
+.advantages-item-1 .advantages-description::before {
   display: block;
   content: "— №1 —";
   margin-bottom: 34px;
 }
 
-ol .advantages-item-2 .advantages-description::before {
+.advantages-item-2 .advantages-description::before {
   display: block;
   content: "— №2 —";
   margin-bottom: 34px;
 }
 
-ol .advantages-item-3 .advantages-description::before {
+.advantages-item-3 .advantages-description::before {
   display: block;
   content: "— №3 —";
   margin-bottom: 34px;
 }
 
-ol .advantages-item-4 .advantages-description::before {
+.advantages-item-4 .advantages-description::before {
   display: block;
   content: "— №4 —";
   margin-bottom: 34px;
 }
 
-ol .advantages-item-5 .advantages-description::before {
+.advantages-item-5 .advantages-description::before {
   display: block;
   content: "— №5 —";
   margin-bottom: 34px;
@@ -406,6 +406,7 @@ ol .advantages-item-5 .advantages-description::before {
 }
 
 .advantages-list {
+  list-style-type: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -555,6 +556,10 @@ ol .advantages-item-5 .advantages-description::before {
   margin: 0 auto;
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.catalog-sign-up {
+  padding-bottom: 138px;
 }
 
 .sign-up-title {
@@ -918,7 +923,7 @@ ol .advantages-item-5 .advantages-description::before {
   padding-left: 18px;
   padding-right: 18px;
   width: 74px;
-  height: 42px;
+  height: 20px;
   background-color: transparent;
 }
 

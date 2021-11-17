@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="/images/favicon.ico">
   </head>
   <body>
     <div class="body-container">
@@ -53,7 +54,7 @@
       <main class="main-inner">
         <div class="page-container">
           <header class="inner-header">
-            <h1 class="inner-header-title">Гостиницы Седоны</h1>
+            <h1 class="h1 inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="index.html">
@@ -65,7 +66,7 @@
                 </a>
               </li>
               <li class="breadcrumbs-item">
-                <img src="images/nav-link.svg">
+                <img src="images/nav-link.svg" alt="">
               </li>
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link text-link" href="catalog.html">Гостиницы</a>
@@ -143,10 +144,10 @@
 
                     <div class="range-wrapper-inputs">
                       <label class="catalog-filter-label">
-                        <input class="range-input" type="number" value="0" name="min-price">от
+                        <input class="field range-input" type="number" value="0" name="min-price">от
                       </label>
                       <label class="catalog-filter-label">
-                        <input class="range-input" type="number" value="900" name="max-price">до
+                        <input class="field range-input" type="number" value="900" name="max-price">до
                       </label>
                     </div>
                   </div>
@@ -161,10 +162,10 @@
           </header>
           <section>
             <div class="sorting-container">
-              <h2 class="sorting-title">Найдено гостиниц: 38</h2>
+              <h2 class="h2 sorting-title">Найдено гостиниц: 38</h2>
               <form class="sorting-type">
                 <label class="visually-hidden" for="sorting">Сортировка</label>
-                <select class="select-control" id="sorting" name="sorting">
+                <select class="select select-control" id="sorting" name="sorting">
                   <option value="cheap">Сначала дешевые</option>
                   <option value="popular">Сначала популярные</option>
                   <option value="expensive">Сначала дорогие</option>
@@ -173,15 +174,15 @@
               </form>
               <div class="mode-selection-container">
                 <a class="mode-selection" href="#" >
-                  <img src="/images/mode-tile.svg" width="16" height="14">
+                  <img src="/images/mode-tile.svg" width="16" height="14" alt="">
                   <span class="visually-hidden" >Показать плиткой</span>
                 </a>
                 <a class="mode-selection" href="#">
-                  <img src="/images/mode-slideshow.svg" width="16" height="14">
+                  <img src="/images/mode-slideshow.svg" width="16" height="14" alt="">
                   <span class="visually-hidden">Показать слайдшоу</span>
                 </a>
                 <a class="mode-selection mode-active" href="#">
-                  <img src="/images/mode-list.svg" width="16" height="14">
+                  <img src="/images/mode-list.svg" width="16" height="14" alt="">
                   <span class="visually-hidden">Показать списком</span>
                 </a>
               </div>
@@ -193,7 +194,7 @@
                 </a>
                 <div class="hotel-card-container">
                   <a  class="hotel-card-link" href="#">
-                    <h4 class="hotel-card-title">Amara Resort & Spa</h4>
+                    <b class="hotel-card-title">Amara Resort & Spa</b>
                   </a>
                   <p class="hotel-card-type">Гостиница</p>
                   <p class="hotel-card-price">От 4000 ₽</p>
@@ -214,7 +215,7 @@
                 </a>
                 <div class="hotel-card-container">
                   <a  class="hotel-card-link" href="#">
-                    <h4 class="hotel-card-title">Desert Quail Inn</h4>
+                    <b class="hotel-card-title">Desert Quail Inn</b>
                   </a>
                   <p class="hotel-card-type">Мотель</p>
                   <p class="hotel-card-price">От 3000 ₽</p>
@@ -235,7 +236,7 @@
                 </a>
                 <div class="hotel-card-container">
                   <a  class="hotel-card-link" href="#">
-                    <h4 class="hotel-card-title">Villas at Poco Diablo</h4>
+                    <b class="hotel-card-title">Villas at Poco Diablo</b>
                   </a>
                   <p class="hotel-card-type">Апартаменты</p>
                   <p class="hotel-card-price">От 2000 ₽</p>
@@ -256,7 +257,7 @@
                 </a>
                 <div class="hotel-card-container">
                   <a  class="hotel-card-link" href="#">
-                    <h4 class="hotel-card-title">GreenTree Inn</h4>
+                    <b class="hotel-card-title">GreenTree Inn</b>
                   </a>
                   <p class="hotel-card-type">Гостиница</p>
                   <p class="hotel-card-price">От 3000 ₽</p>
@@ -296,7 +297,7 @@
                 </li>
               </ul>
               <label class="pagination-hotel-amount">
-                Гостиниц на странице: <select class="hotel-amount" name="hotel-amount">
+                Гостиниц на странице: <select class="select hotel-amount" name="hotel-amount">
                   <option value="4">4</option>
                   <option value="5">5</option>
                   <option value="6">6</option>
@@ -309,13 +310,13 @@
             </div>
           </section>
           <section class="sign-up-catalog">
-            <div class="sign-up-container">
-              <h2 class="sign-up-title">Подпишитесь на рассылку</h2>
+            <div class="sign-up-container catalog-sign-up">
+              <h2 class="h2 sign-up-title">Подпишитесь на рассылку</h2>
               <p class="sign-up-text">Только полезная информация и никакого спама, <br>
                 честное бойскаутское!</p>
                 <form class="sign-up-form" action="https://echo.htmlacademy.ru/" method="post">
                   <label class="visually-hidden" for="e-mail">Ваш e-mail</label>
-                  <input class="field sign-up-input" type="e-mail" name="e-mail" id="e-mail" placeholder="Ваш e-mail" required>
+                  <input class="field sign-up-input" type="email" name="e-mail" id="e-mail" placeholder="Ваш e-mail" required>
                   <input class="button sign-up-button" type="submit" value="Подписаться">
                 </form>
             </div>
