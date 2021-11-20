@@ -703,18 +703,21 @@ body {
   height: 34px;
 }
 
-.footer-logo-img:hover {
-  fill: #756257;
-}
-
-.footer-logo-img:focus {
-  color: #756257;
+.footer-logo-img:focus-within {
   outline: 3px solid #83B3D3;
   border-radius: 1px;
   outline-offset: 10px;
 }
 
-.footer-logo-img:active {
+.footer-svg:hover {
+  fill: #756257;
+}
+
+.footer-svg:focus {
+  fill: #756257;
+}
+
+.footer-svg:active {
   opacity: 30%;
 }
 
