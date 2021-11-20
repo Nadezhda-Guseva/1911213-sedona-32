@@ -97,6 +97,8 @@ body {
   white-space: nowrap;
   border: none;
   cursor: pointer;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .button:hover {
@@ -144,7 +146,7 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
   background: transparent;
-  background-image: url("/images/icon-arrow.svg");
+  background-image: url("../images/icon-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 18px center;
   border: 2px solid #E5E5E5;
@@ -231,7 +233,8 @@ body {
 }
 
 .navigation-user {
-  max-width: 300px;
+  min-width: 200px;
+  max-width: 440px;
   margin-left: auto;
   margin-right: 72px;
   align-items: center;
@@ -245,6 +248,10 @@ body {
   padding: 0;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.nav-button {
+  max-width: 280px;
 }
 
 .navigation-item:last-child {
@@ -348,9 +355,9 @@ body {
 }
 
 .index-header {
-  background-color: #000000;
+  background-color: #83B3D3;
   color: #FFFFFF;
-  background-image: url("/images/index-bg.jpg");
+  background-image: url("../images/index-bg.jpg");
   width: 1200px;
   height: 433px;
   background-repeat: no-repeat;
@@ -538,8 +545,8 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #FFFFFF;
-  background-color: #000000;
-  background-image: url("/images/sign-up-bg.jpg");
+  background-color: #83B3D3;
+  background-image: url("../images/sign-up-bg.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -552,8 +559,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  width: 800px;
+  min-width: 800px;
+  max-width: 1056px;
   margin: 0 auto;
   padding-top: 94px;
   padding-bottom: 94px;
@@ -579,10 +588,9 @@ body {
 
 .sign-up-input {
   border-radius: 10px 0px 0px 10px;
-  width: 600px;
+  width: 556px;
   height: 36px;
 }
-
 
 .sign-up-input .error {
   background-color: #FFFFFF;
@@ -591,7 +599,8 @@ body {
 }
 
 .sign-up-button {
-  width: 200px;
+  min-width: 200px;
+  max-width: 456px;
   height: 60px;
   background: #83B3D3;
   border-radius: 0px 10px 10px 0px;
@@ -616,6 +625,7 @@ body {
 
 
 .page-footer-container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -625,6 +635,9 @@ body {
 }
 
 .footer-phone-number {
+  position: absolute;
+  left: 360px;
+  top: 32%;
   font-size: 40px;
   line-height: 40px;
   color: #000000;
@@ -638,6 +651,7 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  max-width: 336px;
 }
 
 .social-icon {
@@ -667,7 +681,7 @@ body {
 }
 
 .footer-phone-number:hover {
-  fill: #756257;
+  color: #756257;
 }
 
 .footer-phone-number:focus {
@@ -708,8 +722,8 @@ body {
 
 .inner-header {
   color: #FFFFFF;
-  background-color: #000000;
-  background-image: url("/images/catalog-bg.jpg");
+  background-color: #83B3D3;
+  background-image: url("../images/catalog-bg.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -950,10 +964,7 @@ body {
   margin-left: 72px;
   margin-right: 72px;
   padding-bottom: 80px;
-}
-
-.catalog-filter-group {
-  margin-right: 68px;
+  gap: 68px;
 }
 
 .catalog-filter-list {
@@ -973,18 +984,14 @@ body {
   margin-bottom: 30px;
 }
 
-.catalog-filter-group:nth-child(2) {
-  margin-right: 0;
-}
-
 .catalog-filter-group:nth-child(3) {
-  margin-left: 164px;
-  margin-right: 80px;
+  margin-left: auto;
+  margin-right: 12px;
+  max-width: 290px;
 }
 
 .catalog-filter-buttons {
   display: flex;
-  margin-left: auto;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
@@ -996,7 +1003,8 @@ body {
   line-height: 20px;
   border-radius: 4px;
   padding: 14px 32px;
-  width: 160px;
+  min-width: 160px;
+  max-width: 250px;
   background-color: #83B3D3;
 }
 
@@ -1023,9 +1031,12 @@ body {
   border: none;
   text-decoration: none;
   cursor: pointer;
-  width: 100px;
+  min-width: 100px;
+  max-width: 250px;
   height: 32px;
   border-radius: 4px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .catalog-filter-discard:hover {
@@ -1117,13 +1128,16 @@ body {
 
 .hotel-card-container {
   display: grid;
-  grid-template-columns: 152px 160px auto;
+  grid-template-columns: auto auto auto;
   grid-template-rows: 30px 24px 66px;
   column-gap: 8px;
 }
 
 .hotel-card-link {
+  max-width: 678px;
   grid-column: span 3;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .hotel-card-title {
@@ -1137,6 +1151,25 @@ body {
 .rating-container {
   justify-content: space-between;
   margin-left: auto;
+
+}
+
+.stars-rating {
+  background-image: url("../images/icon-star.svg");
+  background-repeat: repeat-x;
+  height: 20px;
+}
+
+.stars-rating-4 {
+  width: 80px;
+}
+
+.stars-rating-3 {
+  width: 60px;
+}
+
+.stars-rating-2 {
+  width: 40px;
 }
 
 .hotel-card-rating {
@@ -1187,22 +1220,20 @@ body {
   font-size: 16px;
   line-height: 16px;
   background-color: #756257;
-  height: 16px;
-  padding-top: 10px;
-  padding-bottom: 12px;
-  padding-left: 32px;
-  padding-right: 32px;
   border-radius: 4px;
   align-self: end;
+  max-width: 300px;
 }
 
 .button-more {
+  padding: 12px 30px;
   grid-column: 1;
   grid-row: 3;
 }
 
 .button-favorites {
   background-color: #83B3D3;
+  padding: 12px 30px;
   grid-column: 2;
   grid-row: 3;
 }
@@ -1220,6 +1251,7 @@ body {
 }
 
 .button-favorites-selected {
+  padding: 12px 28px;
   background-color: #7DB54F;
   grid-column: 2;
   grid-row: 3;
@@ -1262,6 +1294,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items : center;
+  min-width: 160px;
 }
 
 .pagination-button-container {
@@ -1545,7 +1578,7 @@ body {
   height: 54px;
   background-color: #E5E5E5;
   border: none;
-  background-image: url("/images/cross.svg");
+  background-image: url("../images/cross.svg");
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
@@ -1608,7 +1641,7 @@ body {
 .hotel-search-field {
   grid-column: span 2;
   border-radius: 4px;
-  background-image: url("/images/icon-date.svg");
+  background-image: url("../images/icon-date.svg");
   background-repeat: no-repeat;
   background-position: right 18px center;
   z-index: 0;
@@ -1636,7 +1669,6 @@ body {
   background-color: #FFFFFF;
   color: #000000;
 }
-
 
 .button-minus,
 .button-plus {
