@@ -42,6 +42,10 @@ body {
   background-color: #FFFFFF;
 }
 
+.page-header {
+  z-index: 2;
+}
+
 .body-container {
   display:flex;
   flex-direction: column;
@@ -157,7 +161,6 @@ body {
   padding: 12px;
   padding-left: 16px;
 }
-
 
 .select:hover, select:focus{
   outline: none;
@@ -624,7 +627,6 @@ body {
   width: 1200px;
 }
 
-
 .page-footer-container {
   position: relative;
   display: flex;
@@ -957,7 +959,6 @@ body {
   outline: none;
 }
 
-
 .catalog-filter {
   display: flex;
   flex-direction: row;
@@ -1111,7 +1112,6 @@ body {
   margin-left: 72px;
   margin-right: 72px;
   padding: 0;
-
 }
 
 .hotel-card {
