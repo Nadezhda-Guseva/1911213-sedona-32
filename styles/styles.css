@@ -823,7 +823,7 @@ body {
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::after {
-  content: url("/images/control-checkbox.svg");
+  content: url("../images/control-checkbox.svg");
   position: absolute;
   top: 0;
   left: 0;
@@ -1412,7 +1412,7 @@ body {
 
 .popover::before {
   position: relative;
-  content: url(/images/arrow.svg);
+  content: url("../images/arrow.svg");
   background-repeat: no-repeat;
   top: -17px;
   left: 187px;
@@ -1794,7 +1794,7 @@ body {
 
 .tooltip-text::before {
   position: absolute;
-  content: url(/images/arrow-tooltip.svg);
+  content: url("../images/arrow-tooltip.svg");
   background-repeat: no-repeat;
   top: -17px;
   left: 47%;
