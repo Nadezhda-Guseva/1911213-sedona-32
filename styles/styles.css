@@ -670,16 +670,19 @@ body {
   border-radius: 10px;
 }
 
-.footer-social-link:hover {
-  fill: #68A2CA;
-}
-
-.footer-social-link:focus {
-  color: #68A2CA;
+.footer-social-link:focus-within {
   outline: 3px solid #83B3D3;
 }
 
-.footer-social-link:active {
+.social-icon:hover {
+  fill: #68A2CA;
+}
+
+.social-icon:focus {
+  fill: #68A2CA;
+}
+
+.social-icon:active {
   opacity: 30%;
 }
 
