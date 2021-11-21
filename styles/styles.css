@@ -545,6 +545,11 @@ body {
   margin-bottom: 56px;
 }
 
+.call-to-action-button {
+  white-space: normal;
+  max-height: 96px;
+}
+
 .sign-up {
   font-size: 22px;
   line-height: 26px;
@@ -1122,7 +1127,8 @@ body {
 
 .hotel-card {
   display: flex;
-  height: 120px;
+  min-height: 120px;
+  max-height: max-content;
   padding-top: 28px;
   padding-bottom: 30px;
   border-bottom: 1px solid #E6E6E6;
@@ -1136,19 +1142,11 @@ body {
 .hotel-card-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-template-rows: 30px 24px 66px;
+  grid-template-rows: auto 24px 64px;
   column-gap: 8px;
-}
-
-.hotel-card-link {
-  max-width: 678px;
-  grid-column: span 3;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.hotel-card-title {
-  margin: 0;
+  max-width: 664px;
+  min-height: 120px;
+  height: 100%;
 }
 
 .hotel-card-type {
@@ -1158,13 +1156,18 @@ body {
 .rating-container {
   justify-content: space-between;
   margin-left: auto;
-
+  height: 120px;
 }
 
 .stars-rating {
   background-image: url("../images/icon-star.svg");
   background-repeat: repeat-x;
+  background-size: space;
   height: 20px;
+}
+
+.stars-rating-5 {
+  width: 100px;
 }
 
 .stars-rating-4 {
@@ -1179,27 +1182,37 @@ body {
   width: 40px;
 }
 
+.stars-rating-1 {
+  width: 20px;
+}
+
 .hotel-card-rating {
   padding: 10px 32px;
   border-radius: 4px;
 }
 
 .hotel-card-link {
+  grid-column: span 3;
+  min-height: 28px;
+  max-height: 94px;
+  max-width: max-content;
+  grid-column: span 3;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 30px;
   font-weight: 700;
   color: #000000;
   background-color: #FFFFFF;
   text-decoration: none;
   padding: 0;
-  width: max-content;
+  margin: 0;
+  overflow: hidden;
 }
 
 .hotel-card-link:hover {
   color: #756257;
 }
 
-.hotel-card-link:focus {
+.hotel-card-link:focus-within {
   color: #756257;
   outline: 3px solid #83B3D3;
   outline-offset: 4px;
@@ -1319,6 +1332,8 @@ body {
 .pagination-button {
   width: 624px;
   background-color: #83B3D3;
+  white-space: normal;
+  max-height: 96px;
 }
 
 .pagination-button:hover {
@@ -1556,7 +1571,6 @@ body {
   row-gap: 50px;
   grid-template-rows: 54px auto;
   width: 576px;
-
 }
 
 .modal-hotel-search {
